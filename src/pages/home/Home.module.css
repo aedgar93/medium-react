@@ -1,0 +1,111 @@
+.wrapper {
+  composes: content from '../../App.css';
+  position: relative;
+}
+
+
+.articles {
+  width: 100%;
+}
+
+
+.activityWrapper {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.activity {
+  background-color: #fafafa;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.activity h4 {
+  margin: 0;
+}
+
+.activity ol {
+  list-style: none;
+  counter-reset: section;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.topArticle {
+  margin: 15px 0;
+}
+
+.topArticle:last-child {
+  margin-bottom: 0;
+}
+
+.activity .topArticle::before {
+  float: left;
+  color: #333;
+  font-size: 14px;
+  list-style: none;
+  box-sizing: border-box;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 20px;
+  text-align: center;
+  line-height: 33px;
+  counter-increment: section;
+  content: counters(section, " ") "";
+}
+
+.topArticle .topInfo {
+  display: inline-block;
+  max-width: calc(100% - 35px - 20px);
+}
+
+.topTitle {
+  color: black;
+  text-decoration: none;
+}
+
+.topTitle:hover {
+  color: var(--primary-color);
+}
+
+.topAuthor {
+  color: var(--light-gray);
+}
+
+@media only screen and (min-width: 992px) {
+  .articles {
+    width: calc(100% - 500px - 20px); /* activityWrapper width plus 20px for spacing */
+  }
+
+
+  .activityWrapper {
+    width: 500px;
+    float: right;
+    margin-bottom: 0;
+  }
+
+  .activity {
+    width: inherit;
+    position: fixed;
+    padding: 20px;
+  }
+}
+
+
+@media only screen and (min-width: 1500px) {
+  .articles {
+    width: calc(100% - 700px - 20px); /* activityWrapper width plus 20px for spacing */
+  }
+
+
+  .activityWrapper {
+    width: 700px;
+  }
+
+}
+
+

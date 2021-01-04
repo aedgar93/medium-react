@@ -1,0 +1,48 @@
+:root {
+  --page-width: 95%;
+  --light-gray: rgba(0,0,0,.44);
+  --primary-color: #00ab6b;
+  --warning-color: #f77e78;
+  --max-banner-img-height: 500px;
+
+  --s-min-width: 576px;
+  --m-min-width: 768px;
+  --l-min-width: 992px;
+}
+
+@media only screen and (min-width: 1500px) {
+  :root {
+    --page-width: 1450px;
+  }
+}
+
+html, body, #root, .App {
+  margin: 0;
+  height: max-content;
+  min-height: 100%;
+  width: 100%;
+  overflow: visible;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.App {
+  margin-bottom: 50px;
+}
+
+p {
+  color: #333;
+  font-size: 20px;
+}
+
+.content {
+  width: var(--page-width);
+  margin: 0 auto;
+  margin-top: 40px;
+}

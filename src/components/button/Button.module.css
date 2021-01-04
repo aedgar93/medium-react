@@ -1,0 +1,27 @@
+.button {
+  border-radius: 999px;
+  border-style: solid;
+  padding: 0px 10px;
+  border-color: var(--light-gray);
+  border-width: 1px;
+  background: white;
+  color: var(--light-gray);
+  cursor: pointer;
+}
+
+.button[data-variant="primary"] {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.button[data-variant="warning"] {
+  color: var(--warning-color);
+  border-color: var(--warning-color);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  color: gray;
+  border-color: gray;
+}
+

@@ -1,0 +1,89 @@
+.outer {
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+
+.wrapper {
+  width: var(--page-width);
+  margin: 0 auto;
+  height: 70px;
+  box-sizing: border-box;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 40px;
+  width: 37px;
+  box-sizing: border-box;
+  padding: 5px 0;
+}
+
+.headerButton {
+  height: 100%;
+  margin: 0 10px;
+}
+
+.headerButton:last-child {
+  margin-right: 0;
+}
+
+.googleButton {
+  color: white;
+  background: #dd4b39;
+  border-color: #dd4b39;
+  width: 230px;
+  height: 45px;
+  font-size: 16px;
+  padding-right: 15px;
+  padding-left: 15px;
+  align-items: center;
+}
+
+.googleButton svg {
+  float: left;
+}
+
+.googleButton span {
+  width: 100%;
+  text-align: center;
+}
+
+
+.popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, .8);
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.popupVisible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popupTitle {
+  color: var(--light-gray);
+  margin-bottom: 25px;
+}
+
+.popupClose {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+  width: 30px !important;
+  height: 30px;
+}

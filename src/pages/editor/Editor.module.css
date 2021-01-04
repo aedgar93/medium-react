@@ -1,0 +1,61 @@
+.wrapper {
+  composes: content from '../../App.css';
+  position: relative;
+  box-sizing: border-box;
+}
+
+.publish {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 40px;
+}
+
+.upload {
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid rgba(0,0,0,.44);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+}
+
+.titleAndImage {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 36px;
+  border: 0;
+  outline: 0;
+  margin: 50px 0 20px 0;
+  width: 100%;
+}
+
+.editor {
+  border: 1px solid #F1F1F1;
+  padding: 0 10px;
+}
+
+.imagePreviewWrapper {
+  margin: 20px auto;
+}
+
+.imagePreview {
+  max-width: 100%;
+  max-height: var(--max-banner-img-height);
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.error {
+  color: var(--warning-color);
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: right;
+}

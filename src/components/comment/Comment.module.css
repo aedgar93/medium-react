@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  max-width: 500px;
+}
+
+.author {
+  max-width: 175px;
+}
+
+.content {
+  margin-left: 10px;
+  border-radius: 10px;
+  background: var(--light-gray);
+  color: white;
+  padding: 5px 10px 8px 10px;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.text {
+  font-size: 16px;
+  white-space: pre-wrap;
+}

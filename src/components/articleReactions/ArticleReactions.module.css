@@ -1,0 +1,31 @@
+.reactions {
+  display: inline-block;
+  color: var(--light-gray);
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.reactions:last-child {
+  margin-right: 0;
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 10px;
+  height: 24px;
+  width: 22px;
+  vertical-align: middle;
+}
+
+.icon svg {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.reactions span {
+  vertical-align: middle;
+}
+
+.clickable {
+  cursor: pointer;
+}

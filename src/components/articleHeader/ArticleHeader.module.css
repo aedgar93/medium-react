@@ -1,0 +1,19 @@
+.author {
+  display: flex;
+}
+
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.authorName {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.publishDate {
+  color: var(--light-gray);
+  font-size: 12px;
+}
