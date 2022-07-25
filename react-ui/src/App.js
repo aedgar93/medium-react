@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import 'App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import 'components/button' //load button early so other components can override css
 import Header from 'components/header'
